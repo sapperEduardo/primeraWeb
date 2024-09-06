@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Soy Leo Da Rocha</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#project">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy Leo Da Rocha, un apasionado por la tecnología y los proyectos de software. Me dedico a crear soluciones innovadoras para facilitar la vida de las personas.</p>
+        </section>
+
+        <section id="project">
+            <h2>Proyectos</h2>
+            <div class="project-card">
+                <h3>Proyecto 1</h3>
+                <p>Un proyecto de software innovador para gestionar tareas de manera eficiente.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Aplicación de escritorio que permite a los usuarios controlar su hogar desde cualquier lugar.</p>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 3</h3>
+                <p>Sistema de gestión para tiendas online, optimizado para ofrecer una experiencia de usuario sencilla y rápida.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¡Estemos en contacto! Puedes encontrarme en mis redes sociales o enviarme un correo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LaWebDeLeo | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón para subir al inicio -->
+    <button id="scrollToTopBtn" title="Volver arriba">↑</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario hace scroll hacia abajo
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Volver al inicio cuando se hace clic en el botón
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
